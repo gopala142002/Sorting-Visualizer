@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 header
-{
-    padding-top: 5px;
+{padding-top: 5px;
     padding-bottom: 50px;
     background-color: rgb(1, 3, 10);
     color: antiquewhite;
