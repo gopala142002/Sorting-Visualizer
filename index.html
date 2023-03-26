@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="icon.png">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p>Sorting Visualizer</p>
+    </header>
+    <div class="container">
+        <div class="div_left">
+            <div class="s_algo">
+                <select name="s_algo" id="s_algo">
+                    <option value="Select Sorting Algorithm">Select Sorting Algorithm</option>
+                    <option value="bubbleSort">* Bubble Sort</option>
+                    <option value="selectionSort">* Selection Sort</option>
+                    <option value="insertionSort">* Insertion Sort</option>
+                    <option value="mergeSort">* Merge Sort</option>
+                    <option value="heapSort">* Heap Sort</option>
+                </select>
+            </div>
+            <div class="arr_size">
+                <label for="arr-size">Array Size</label>
+                <input type="range" id="arrsize" name="arr_size" min="10" max="150" value="30" class="range">
+            </div>
+            <div class="visual_speed">
+                <label for="visual_speed">Visualization Speed</label>
+                <input type="range" id="visual_speed" name="visual_speed" min="1" max="100" value="75" class="range">
+            </div>
+            <button type="button" id="newArray_btn" class="btn">New Array</button>
+            <button type="button" id="sort_btn" class="btn">SORT</button>
+        </div>
+        <div class="rightSide" id="right">
+            <div class="divRight" id="div_right">
+
+            </div>
+
+            <div class="complexity" id="algo_complexity">
+                <div class="Time_complexity">
+                    <h4>TIME COMPLEXITY</h4>
+                    <div>
+                        <p>WORST CASE : <span id="worst_case"></span></p>
+                    </div>
+                    <div>
+                        <p>AVERAGE CASE : <span id="average_case"></span></p>
+                    </div>
+                    <div>
+                        <p>BEST CASE : <span id="best_case"></span></p>
+                    </div>
+                </div>
+                <div class="space_complexity">
+                    <h4>SPACE COMPLEXITY</h4>
+                    <div>
+                        <p>WORST CASE : <span id="space_worst_case"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+    </div>
+    <script src="main.js"></script>
+    <script src="bubble_sort.js"></script>
+    <script src="visualization.js"></script>
+    <script src="selection_sort.js"></script>
+    <script src="merge_sort.js"></script> 
+    <script src="insertion_sort.js"></script>
+</body>
+</html>

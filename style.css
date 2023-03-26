@@ -1,0 +1,226 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header
+{
+    padding-top: 5px;
+    padding-bottom: 50px;
+    background-color: rgb(1, 3, 10);
+    color: antiquewhite;
+    text-align: center; 
+    height: 7vh;
+    font-size: 200%;
+    width: 100%;
+}
+.container
+{
+    display: flex;
+    height: 93vh;
+    background-color: red;
+}
+.div_left
+{
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    background-color: rgb(214, 195, 231);
+    padding: 1%;
+}
+.rightSide
+{
+    height: 100%;
+    width: 70%;
+    /* background-color: black; */
+    display: block;
+}
+.divRight
+{
+    width: 100%;
+    background: #4d5061;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    /* float: left;
+    text-align: left; */
+    height: 80%;
+}
+.complexity
+{
+    width: 100%;
+    height: 20%;
+    background-color: #000000;
+    color: aliceblue;
+    display: flex;
+}
+.Time_complexity
+{
+    width: 50%;
+    height: 100%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.Time_complexity h4
+{
+    margin-bottom: 2%;
+    color:blueviolet;
+}
+.space_complexity
+{
+    width: 50%;
+    height: 100%;
+    margin-top: 2%;
+}
+.space_complexity h4
+{
+    margin-bottom: 2%;
+    color:blueviolet;
+}
+.s_algo
+{
+    background: #4d5061;
+    color: white;
+    width: vw;
+    padding: 1rem 1.5rem;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 25px rebeccapurple;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+#s_algo{
+    width: 100%;
+    background: #4d5061;
+    border: none;
+    color: white;
+}
+label , input{
+    display: inline-block;
+    vertical-align: baseline;
+    margin-top:5px;
+}
+.arr_size
+{   
+    background: #4d5061;
+    color: white;
+    padding: 4% 7%;
+    margin: auto;
+    box-shadow: 0 10px 25px rebeccapurple;
+    width: 50%;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.arr_size label{
+    width: 100%;
+}
+.visual_speed label
+{
+    width: 100%;
+}
+.visual_speed
+{
+    background: #4d5061;
+    color: white;
+    margin: auto;
+    /* padding: 1em 1.5rem; */
+    padding: 4% 7%;
+    box-shadow: 0 10px 25px rebeccapurple;
+    border-radius: 5px;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#newArray_btn
+{
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 40px;
+    background: #4d5061;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgb(103, 11, 196);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#sort_btn
+{
+    display: block;
+    margin: auto;
+    width: 40%;
+    height: 40px;
+    background: #4d5061;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rebeccapurple;
+    margin-top: 25px;
+    /* margin-bottom: 50px; */
+    
+}
+#sort_btn:hover
+{
+    background-color: black;
+}
+#newArray_btn:hover
+{
+    background-color: black;
+}
+.btn
+{
+    cursor:pointer;
+    background-color: blackS;
+}
+.range{
+    width: 80%;
+}
+.range:hover
+{
+    cursor: pointer;
+}
+@media (max-width:650px)
+{
+    .range{
+        width: 100%;
+    }
+}
+@media (max_width:835px)
+{
+    .arr_size
+    {
+        padding: 0.5em;
+    }
+}
+@media (max-width:450px)
+{
+    .container
+    {
+        display: block;
+    }
+    .div_left
+    {
+        width: 450px;
+        height: 650px;
+    }
+    header
+    {
+        width: 450px;
+    }
+    .divRight
+    {
+        width: 450px;
+        height: 650px;
+    }
+    .complexity
+    {
+        width: 450px;
+        height: 70px;
+    }
+}
