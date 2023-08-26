@@ -59,14 +59,13 @@ function sortAlgos()
     switch(algo)
     {
         case "bubbleSort":
-
             bubbleSort();
             break;
         case "selectionSort":selectionSort();
             break;
         case "mergeSort":mergeSort();
             break;
-        case "heapSort":heapSort();
+        case "quickSort":heapSort();
             break;
         case "insertionSort":insertionSort();
             break;

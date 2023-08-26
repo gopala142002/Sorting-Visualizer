@@ -1,10 +1,5 @@
-function bubbleSort()
-{   
-    document.getElementById("worst_case").innerHTML="O(N^2)";
-    document.getElementById("average_case").innerHTML="O(N^2)";
-    document.getElementById("best_case").innerHTML="O(N)";
-    document.getElementById("space_worst_case").innerHTML="O(1)";
-    disable_ip();
+function sort()
+{
     let i=0;
     for(i=0;i<array_size;i++)
     {
@@ -28,5 +23,15 @@ function bubbleSort()
         }
         box_update(box[j],box_sizes[j],"rgb(61, 250, 4)",i,j);
     }
+}
+async function bubbleSort()
+{   
+    document.getElementById("worst_case").innerHTML="O(N^2)";
+    document.getElementById("average_case").innerHTML="O(N^2)";
+    document.getElementById("best_case").innerHTML="O(N)";
+    document.getElementById("space_worst_case").innerHTML="O(1)";
+    disable_ip();
+    let data=await sort();
+    enable_ip();
 }
 
